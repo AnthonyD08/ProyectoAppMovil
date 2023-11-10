@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.IngresoEmisiones"
+             xmlns:local="clr-namespace:BASE" BackgroundColor="#1CBBC4">
+    <ContentPage.Content>
+        <StackLayout >
+
+
+            <ScrollView VerticalScrollBarVisibility="Default">
+                <StackLayout Padding="20" BackgroundColor="#4FD190" Margin="0,0,0,0">
+
+                    <Picker Title="Mes" x:Name="PickerMes">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Enero</x:String>
+                                <x:String>Febrero</x:String>
+                                <x:String>Marzo</x:String>
+                                <x:String>Abril</x:String>
+                                <x:String>Mayo</x:String>
+                                <x:String>Junio</x:String>
+                                <x:String>Julio</x:String>
+                                <x:String>Agosto</x:String>
+                                <x:String>Septiembre</x:String>
+                                <x:String>Octubre</x:String>
+                                <x:String>Noviembre</x:String>
+                                <x:String>Diciembre</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label Text="Electricidad, gas y residuos" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+
+                    <local:MiEntry Placeholder="Electicidad del mes (Kw/h):" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtelectricidad"/>
+                    <local:MiEntry Placeholder="Gas (L):" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtgas"/>
+                    <local:MiEntry Placeholder="Residuos (Kg):" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtresiduos"/>
+
+                    <Label Text="Transporte" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+                    <Picker Title="Tipo de vehículo" x:Name="TipoTransporte">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Automovil (Gasolina)</x:String>
+                                <x:String>Automovil (Diesel)</x:String>
+                                <x:String>Bus público</x:String>
+                                <x:String>Bicicleta</x:String>
+                                <x:String>Caminando</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Entry Placeholder="Consumo (en km/litro)" x:Name="txtConsumo" />
+                    <Entry Placeholder="Kilómetros recorridos al mes" x:Name="txtKilometros" />
+
+                    <ListView x:Name="lstEmisiones" Margin="0,20,0,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Mes }" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Electricidad_consumida}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Gas_Consumido}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Cantidad_Residuos}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Tipo_Vehiculo}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Vehiculo_Consumo}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                        <Label Text="{Binding Vehiculo_Recorrido}" FontSize="Medium" HorizontalOptions="StartAndExpand" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                   
+
+                </StackLayout>
+                
+               
+            </ScrollView>
+
+
+
+
+            <Button Text="Eliminar datos" BackgroundColor="#4FD190" TextColor="#1A4D2E" FontAttributes="Bold" Margin="90,15,90,20" FontSize="Subtitle" x:Name="btnEliminarDatos"/>
+            <Button Text="Enviar" BackgroundColor="#4FD190" TextColor="#1A4D2E" FontAttributes="Bold" Margin="90,15,90,20" FontSize="Subtitle" x:Name="btnRegistrarEmision"/>
+            
+   
+        </StackLayout>
+        
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>

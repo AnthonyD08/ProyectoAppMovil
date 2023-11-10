@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.Login"
+             xmlns:local="clr-namespace:BASE" BackgroundColor="#1CBBC4">
+   
+    <StackLayout Padding="20">
+        <StackLayout >
+            <Image Grid.Row="0" Source="Logo.png" WidthRequest="100" HeightRequest="100" Margin="0,100,0,30" />
+            <Label Text="Inicio de sesión" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+
+            <ScrollView VerticalScrollBarVisibility="Default">
+                <StackLayout Padding="20" BackgroundColor="#4FD190" Margin="0,20,0,0">
+                    <local:MiEntry Placeholder="Nombre de Usuario:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtUser"/>
+                    <local:MiEntry Placeholder="Contraseña:" Margin="0,20,0,0" IsPassword="True" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtClave"/>
+                    <Label Text="¿Aún no tienes cuenta? Regístrate" Margin="0,20,10,0" TextColor="#1A4D2E" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="lblRegistro"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+
+            <Button Text="Ingresar" BackgroundColor="#4FD190" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,40,0,0" FontSize="Subtitle" x:Name="btnLogin"/>
+
+        </StackLayout>
+
+    </StackLayout>
+        
+</ContentPage>

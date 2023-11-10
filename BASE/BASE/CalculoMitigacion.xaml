@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.CalculoMitigacion">
+    
+    
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="10" BackgroundColor="#1CBBC4">
+                <Picker Title="Mes" x:Name="PickerMes">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Enero</x:String>
+                            <x:String>Febrero</x:String>
+                            <x:String>Marzo</x:String>
+                            <x:String>Abril</x:String>
+                            <x:String>Mayo</x:String>
+                            <x:String>Junio</x:String>
+                            <x:String>Julio</x:String>
+                            <x:String>Agosto</x:String>
+                            <x:String>Septiembre</x:String>
+                            <x:String>Octubre</x:String>
+                            <x:String>Noviembre</x:String>
+                            <x:String>Diciembre</x:String>
+
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Resultados Del Mes" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"  />
+
+            <Label Text="Electricidad,gas y residuos:" FontSize="20" HorizontalOptions="Center" Margin="0,60,0,20" TextColor="White" FontAttributes="Bold"/>
+
+            <Image Source="casa.png" Margin="0,0,0,15" />
+
+                <Label Text="Emisiones de electricidad consumida: " FontSize="15" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblElectricidad"  />
+                <Label Text="Emisiones gas utilizado: " FontSize="15" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblGas" />
+                <Label Text="Emisiones residuos producidos:" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblResiduos" />
+
+                <Label Text="Transporte:" FontSize="20" HorizontalOptions="Center" Margin="0,30,0,20" TextColor="White" FontAttributes="Bold"/>
+
+            <Image Source="auto.png" Margin="0,5,0,15" />
+            <Label Text="Emision de transporte: " FontSize="15" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblvehiculo"  />
+
+                <Label Text="Recomendaciones:" FontSize="Title" HorizontalOptions="Center" Margin="0,30,0,10" TextColor="White" FontAttributes="Bold" />
+
+            <Label Text="" FontSize="15" HorizontalOptions="Center" Margin="0,30,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblRecomendacionesElectricidad" />
+            <Label Text="" FontSize="15" HorizontalOptions="Center" Margin="0,30,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblRecomendacionesResiduos" />
+            <Label Text="" FontSize="15" HorizontalOptions="Center" Margin="0,30,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblRecomendacionesGas" />
+            <Label Text="" FontSize="15" HorizontalOptions="Center" Margin="0,30,0,0" TextColor="#1A4D2E" FontAttributes="Bold" x:Name="lblRecomendacionesTransporte" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

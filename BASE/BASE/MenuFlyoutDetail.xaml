@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.MenuFlyoutDetail"
+             Title="Opciones" BackgroundColor="#4FD190">
+
+    <StackLayout Padding="10" BackgroundColor="#1CBBC4">
+        <Label Text="Zero CO2" FontSize="Title" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#FFB762" FontAttributes="Bold"/>
+
+        <Image Source="co2.jpg" Margin="0,0,0,0"/>
+        <Label Text="Quienes somos?" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,10" TextColor="#1A4D2E" FontAttributes="Bold"/>
+        <Label Text="¡Bienvenid@ a Zero CO2, la aplicación móvil que te ayudará a calcular la huella de carbono de tu organización y a tomar acciones para reducirla! En la actualidad, la huella de carbono es un indicador clave para medir la cantidad de gases de efecto invernadero emitidos por la actividad humana y, de esta manera, tomar decisiones informadas sobre cómo reducir las emisiones de CO2. La aplicación Zero CO2 se enfoca en brindarte una solución efectiva para el cálculo de la huella de carbono de tu organización, proporcionándote una herramienta sencilla para el ingreso de factores de emisión que se realizan en un mes específico.Zero CO2 se conecta a una base de datos o a una base de datos local para que puedas llevar un seguimiento y análisis más detallado de las emisiones indirectas asociadas al consumo eléctrico adquirido y consumido, que se producen físicamente en las instalaciones del productor energético. Además, te ofrecemos distintas secciones con recursos valiosos que
+incluyen la base técnica del cálculo de cero emisiones, un ingresador de emisiones por alcance, un cálculo de mitigación y mucho más." TextColor="#1A4D2E"/>
+
+
+        <Label Text="¡Únete a nuestro proyecto para proteger nuestro planeta y crear un futuro más sostenible para todos!" TextColor="#1A4D2E" FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>

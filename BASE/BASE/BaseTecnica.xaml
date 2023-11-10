@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.BaseTecnica" BackgroundColor="#1CBBC4">
+    <ContentPage.Content>
+        <StackLayout Padding="20" BackgroundColor="#1CBBC4">
+            <Label Text="Base tecnica de Zero CO2" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold" />
+            <ScrollView VerticalScrollBarVisibility="Default">
+                <StackLayout BackgroundColor="#4FD190">
+                    <Label Text="¿En qué consiste Zero CO2?" FontSize="Subtitle" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+                    <Label Text="Con Zero CO2, los usuarios podrán llevar un control de su huella de carbono, para que de esta manera puedan ver de manera cuantitativa el impacto que causan en el ambiente, así mismo generamos un registro mensual de los datos registrados, para que los usuarios puedan ver su cambio mes a mes.
+Nuestra meta es ayudar a que más personas se comprometan con el ambiente, que puedan cuantificar los datos de su consumo mensualmente, y así mismo vean el impacto que generan sus acciones con el medio ambiente." FontSize="Small" Margin="0,5,0,0" TextColor="#1A4D2E"/>
+                    <Label Text="¿Cuál es el alcance?" FontSize="Subtitle" Margin="0,5,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+                    <Label Text="Zero CO2 está enfocada en el alcance 2 como campo de datos de actividad, el cual estima las emisiones indirectas que se producen en una institución u organización. Entre los ejemplos están el consumo de electricidad, residuos que se compran y desechan, así como las emisiones que produce una persona al viajar desde su casa." FontSize="Small" Margin="0,5,0,0" TextColor="#1A4D2E" />
+                    <Label Text="¿Como se calcula la huella de carbono?" FontSize="Subtitle" Margin="0,5,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+                    <Label Text="La fórmula para calcular la huella de carbono requiere solamente dos datos, el consumo por parte del usuario y el factor de emisión perteneciente al tipo de consumo utilizado. Éstos dos datos se multiplican, obteniendo así la huella de carbono.
+Es importante tener en cuenta que esto puede variar dependiendo de los factores. Por ejemplo, en lo que respecta al consumo de energía, un país es un factor determinante para el cálculo de la huella de carbono. Asimismo, en lo concerniente al transporte, el modelo del vehículo es importante para saber su factor de emisión. Por lo tanto, el resultado final depederá de los factores, y por tal razón, Zero CO2 procura solicitar los datos necesarios para brindar una resultado más exacto." FontSize="Small" Margin="0,5,0,0" TextColor="#1A4D2E" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

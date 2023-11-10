@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.Registro" 
+             xmlns:local="clr-namespace:BASE" BackgroundColor="#1CBBC4">
+
+
+    <StackLayout Padding="20">
+        <Label Text="Registro de usuario" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+
+        <ScrollView VerticalScrollBarVisibility="Default">
+            <StackLayout Padding="20" BackgroundColor="#4FD190">
+                <local:MiEntry Placeholder="Nombre:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtNombre"/>
+                <local:MiEntry Placeholder="Primer apellido:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtApellido"/>
+                <local:MiEntry Placeholder="Provincia:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtProvincia"/>
+                <local:MiEntry Placeholder="Direccion:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtDireccion"/>
+                <local:MiEntry Placeholder="Telefono:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtTelefono"/>
+                <local:MiEntry Placeholder="Correo:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtCorreo"/>
+                <local:MiEntry Placeholder="Inscrito:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtInscrito"/>
+                <local:MiEntry Placeholder="Nombre de Usuario:" Margin="0,20,0,0" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtUser"/>
+                <local:MiEntry Placeholder="Contraseña:" Margin="0,20,0,0" IsPassword="True" BackgroundColor="#019267" TextColor="Black" PlaceholderColor="#1A4D2E" x:Name="txtClave"/>
+               
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Registrarse" BackgroundColor="#4FD190" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,40,0,0" FontSize="Subtitle" x:Name="btnRegistrarse"/>
+        <Label x:Name="StatusMessage"></Label>
+    </StackLayout>
+
+</ContentPage>

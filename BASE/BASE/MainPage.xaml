@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.MainPage" BackgroundColor="#1CBBC4">
+
+
+    <StackLayout Padding="20">
+        <StackLayout>
+            <Image Grid.Row="0" Source="Logo2.png" WidthRequest="150" HeightRequest="150" Margin="0,120,0,30" />
+            <Label Text="Bienvenid@ a Zero CO2" FontSize="Title" FontAttributes="Bold" TextColor="#1A4D2E" HorizontalOptions="Center"/>
+            
+            <Button Text="Continuar" BackgroundColor="#4FD190" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,40,0,0" FontSize="Subtitle" x:Name="btnContinuar"/>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BASE.Ayuda" BackgroundColor="#1CBBC4">
+
+    <ScrollView>
+        <StackLayout Padding="20" BackgroundColor="#1CBBC4" Margin="0,20,0,0">
+            <Image Grid.Row="0" Source="Logo.png" WidthRequest="100" HeightRequest="100" Margin="0,0,0,30" />
+            <Label Text="Preguntas frecuentes" FontSize="Title" HorizontalOptions="Center" Margin="0,0,0,0" TextColor="#1A4D2E" FontAttributes="Bold"/>
+            <Grid BackgroundColor="#4FD190">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Text="¿Cómo funciona la aplicación?" Grid.Row="0" FontSize="Subtitle" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,30,0,0">
+                <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HeaderLabel1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <ContentView x:Name="ContentView1" Grid.Row="1" IsVisible="false">
+                    <Label Text="Zero CO2 es una app que ayuda a mantener un control sobre tu huella de carbono, solo basta con crear una cuenta y listo. Una vez registrado, dentro de la app puedes encontrar distintos apartados, como el ingreso de emisiones, en donde podrás ingresar el gasto de energía, residuos, gas y gasolina que tuviste durante el mes. Una vez ingresados los datos, dirígete ir al apartado de cálculo de mitigación, donde ya se encontrará reflejado el cálculo de la huella de CO2. En base a esto también podrás encontrar recomendaciones para que puedas colaborar más al ambiente." TextColor="#1A4D2E" />
+                </ContentView>
+            </Grid>
+
+            <Grid BackgroundColor="#4FD190">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Text="¿En qué se basa el cálculo de CO2?" Grid.Row="0" FontSize="Subtitle" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,20,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HeaderLabel2"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <ContentView x:Name="ContentView2" Grid.Row="1" IsVisible="false">
+                    <Label Text="Dentro de nuestra aplicación existe un apartado llamado Base técnica, en el que explicamos a detalle el cálculo de las emisiones registradas." TextColor="#1A4D2E"/>
+                </ContentView>
+            </Grid>
+
+            <Grid BackgroundColor="#4FD190">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Text="¿Existe alguna diferencia en el resultado por el tipo de vehículo?" Grid.Row="0" FontSize="Subtitle" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,20,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="HeaderLabel3"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <ContentView x:Name="ContentView3" Grid.Row="1" IsVisible="false">
+                    <Label Text="Si, el factor de emisión de los vehículos varía según su marca, e incluso el tipo de gasolina que utilicen, por eso pedimos ingresar el tipo de vehículo en el cual se transportó." TextColor="#1A4D2E"/>
+                </ContentView>
+            </Grid>
+
+            <Grid BackgroundColor="#4FD190">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Text="¿Cómo puedo saber cuánta electricidad gaste durante el mes?" Grid.Row="0" FontSize="Subtitle" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,20,0,0">
+                    <Label.GestureRecognizers>
+                         <TapGestureRecognizer Tapped="HeaderLabel4"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <ContentView x:Name="ContentView4" Grid.Row="1" IsVisible="false">
+                    <Label Text="En tu recibo de luz debe haber un apartado llamado consumo, el cual te revela el consumo en KWh que tuviste durante el mes." TextColor="#1A4D2E"/>
+                </ContentView>
+            </Grid>
+            <Grid BackgroundColor="#4FD190">
+                <Label Text="Si necesitas más información poder ingresar al siguiente enlace:" Grid.Row="0" FontSize="Subtitle" TextColor="#1A4D2E" FontAttributes="Bold" Margin="0,20,0,0"/>
+                <Label Text="https://cambioclimatico.go.cr/ " Grid.Row="0" FontSize="Subtitle" TextColor="Blue" FontAttributes="Italic" Margin="60,40,0,5" TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Link"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
